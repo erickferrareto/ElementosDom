@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom</title>
+</head>
+<style>
+  .id_js{
+    color: brown;
+  }
+</style>
+<body>
+  <header>
+    <h1>Elementos DOM</h1>
+  </header>
+
+  <script>
+
+    // Adcionando id pré-definido no CSS por JS
+
+    const cor_id = document.querySelector('header')
+    cor_id.classList.add('id' , 'id_js')
+
+    //Criando class no HTML por JS
+
+    const body_class = document.createElement('class')
+    body_class.innerText = 'Esse class foi feita no JavaScript'
+    const body = document.querySelector('body')
+    body.append(body_class)
+     
+  </script>
+</body>
+</html>

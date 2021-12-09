@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementos DOM</title>
+</head>
+<body>
+
+  <p id="titulo">Title1</p>
+  <p id="titulo2">Title2</p>
+  <input type="text" id="valor">
+  <p id="cachorro"></p>
+    
+  <script>
+
+    const element = document.getElementById('titulo')
+    element.textContent = 'Esse texto foi alterado por um textContent' 
+
+    const element2 = document.getElementById('titulo2')
+    element2.innerHTML = '<strong>Esse texto foi alterado por um innerHtml </strong>'
+
+    const valor = document.getElementById('valor')
+    valor.value = "Valor pré definido"
+
+    //Adicionando atributos
+    const atributos = document.getElementById('cachorro')
+    atributos.setAttribute('class' , 'gato')
+    //Removendo atributos
+    atributos.removeAttribute('id')
+
+
+  </script>
+</body>
+</html>
